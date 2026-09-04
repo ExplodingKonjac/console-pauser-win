@@ -72,9 +72,10 @@ int main(int argc, char**) {
 
     std::fprintf(
         stderr,
-        "\nUser time:   %.3f s\n"
+        "\n--------------------------------\n"
+        "User time:   %.3f s\n"
         "System time: %.3f s\n"
-        "Memory:      %.2f MiB\n\n",
+        "Memory:      %.2f MiB\n",
         sec(user), sec(sys), pmc.PeakWorkingSetSize / 1048576.0
     );
 
